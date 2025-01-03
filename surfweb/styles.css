@@ -1,0 +1,375 @@
+/* General styles (unchanged) */
+body, html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+/* Navigation bar styling */
+nav {
+   background-color: #04051dea;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+nav .logo {
+    flex-shrink: 1;
+}
+
+nav .logo img {
+    width: 120px;
+    height: auto;
+    background: none;
+    transition: transform 0.3s ease;
+}
+
+/* Logo hover effect */
+nav .logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the unordered list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+/* List item styling */
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Anchor link styling */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    padding: 0.5rem 1rem; 
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; 
+    text-transform: uppercase; 
+    border-radius: 5px; 
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: #ffdd57; /* Change text color on hover */
+    background-color: rgba(255, 221, 87, 0.2); /* Add background color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-image); /* Use dynamic custom property */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -2;
+    transition: opacity 1s ease-in-out; 
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent dark overlay */
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+header a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+header a:hover {
+    background: #0056b3;
+}
+
+/* Location section */
+.location {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    flex-wrap: wrap; /* Allow content to stack */
+}
+
+.location iframe {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.description {
+    max-width: 800px;
+    text-align: left;
+}
+
+.description h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Services */
+#services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+/* From Uiverse.io by Yaya12085 */ 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+  
+  .content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+  }
+  
+  
+
+.service-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.popup-content p {
+    margin-bottom: 1rem;
+}
+
+.popup-content iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .location {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 90%; /* Make services stack on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header a {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+}

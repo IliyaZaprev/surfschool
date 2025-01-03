@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varna Surf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <!-- <img src="varnaSurfLogo.jpg" alt="Surf School Logo"> --> 
+        </div>
+        <ul>
+            <li><a href="#home" >Начало</a></li>
+            <li><a href="#map">Локация</a></li>
+            <li><a href="#services">Услуги</a></li>
+        </ul>
+
+        
+    </nav>
+
+    <header id="home">
+        <h1>Varna Surf</h1>
+        <p>Превърнете мечтата за свободата върху вълните в реалност </br> Запишете се на урок по уиндсърф при нас и открийте страстта към морето</p>
+        <a href="#services">Разгледайте нашите услуги</a>
+    </header>
+     <div id="overlay"></div>
+    <section id="map">
+        <div class="location">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Cubo Fishermans BEach VArna&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+                    </iframe>
+                    <a href="https://sprunkin.com">Sprunki Mods</a>
+                </div>
+                <style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}
+                </style>
+                </div>
+           
+            <div class="description">
+                <h3>Сърф Клуб - Варна</h3>
+                <p>
+                    Рибарски плаж / Кубо е идеалното място за любителите на водните спортове!
+                     Тук можете да се насладите на уиндсърф, SUP (stand up paddle board), каяк и още много. 
+                     Ако никога досега не сте пробвали уиндсърф, препоръчваме да наемете инструктор –
+                      само за няколко часа ще усвоите основите и ще се насладите на това невероятно преживяване.
+
+                  Съвременният уиндсърф е изключително лесен за овладяване благодарение на модернизираното оборудване –
+                   широки дъски и леки платна, които правят обучението бързо и приятно.   
+                </p>
+                <p>
+                    Рибарски плаж е перфектен за начинаещи: дългият плитък бряг осигурява спокойствие и безопасност, а водите са защитени от вълнение.
+                </p>
+                <p>
+                   <h4> Често задавани въпроси:</h4><br>
+                    Какво да си носите?
+                    Бански, фланелка против изгаряне (ликра – по желание). Всичко останало е осигурено от нас!
+                    
+                    Възрастова граница:
+                    8 години и нагоре.
+                    
+                    Трябва ли да мога да плувам?
+                    Не, това не е задължително.
+                    
+                    Елате и открийте радостта от водните спортове на Рибарски плаж!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Нашите Услуги</h2>
+        <div class="service-list">
+            <div class="card">
+                <div class="content">
+                  <div class="title">Наем Уиндсърф</div>
+                  <div class="price">40 BGN </div>
+                  <div class="description">Ако вече имаш опит в уиндсърфинга и си готов да се потопиш в приключението, тук ще намериш най-добрата екипировка под наем във Варна!</div>
+                </div>
+                  <button onclick="showPopup('Наем Уиндсърф',  'https://www.youtube.com/embed/sample-video-1')">
+                    Разгледайте
+                  </button>
+            </div>
+            
+            <div class="card">
+                <div class="content">
+                  <div class="title">Уиндсърф Урок</div>
+                  <div class="price">80 BGN </div>
+                  <div class="description">Ако досега не си имал възможност да пробваш уиндсърфинг или искаш да усъвършенстваш уменията си, не се притеснявай – можеш да се запишеш за урок при нас и да започнеш своето приключение на вълните с професионален инструктор!</div>
+                </div>
+                  <button onclick="showPopup('Уиндсърф Урок',  'https://www.youtube.com/embed/sample-video-2')">
+                    Разгледайте
+                  </button>
+            </div>
+            
+            <div class="card">
+                <div class="content">
+                  <div class="title">Двоен Каяк</div>
+                  <div class="price">30 BGN </div>
+                  <div class="description">Изживейте вълнуващи моменти с нашия двоен каяк! Споделете приключението с приятел или близък и се насладете на красотата на природата от водата. Със стабилност и удобство, нашият двоен каяк е идеален избор за всички, които искат да се потопят в активен воден спорт и да се забавляват заедно.</div>
+                </div>
+                  <button onclick="showPopup('Двоен Каяк',  'https://www.youtube.com/embed/sample-video-3')">
+                    Разгледайте
+                  </button>
+            </div>
+           
+            <div class="card">
+                <div class="content">
+                  <div class="title">Единичен Каяк</div>
+                  <div class="price">20 BGN </div>
+                  <div class="description">Избери нашия единичен каяк за уникално приключение на водата! Лек и стабилен, идеален за самостоятелна разходка и забавление.</div>
+                </div>
+                  <button onclick="showPopup('Единичен Каяк',  'https://www.youtube.com/embed/sample-video-4')">
+                    Разгледайте
+                  </button>
+            </div>
+            
+            <div class="card">
+                <div class="content" >
+                  <div class="title">SUP (Stand Up Paddle Board)</div>
+                  <div class="price">20 BGN </div>
+                  <div class="description">Избери SUP (Stand Up Paddle Board) за спокойно или активно приключение на водата! Лесен за управление и подходящ за всички нива, нашият SUP е перфектен за релакс или тренировка.</div>
+                </div>
+                  <button onclick="showPopup('SUP (Stand Up Paddle Board)',  'https://www.youtube.com/embed/sample-video-5')" >
+                    Разгледайте
+                  </button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <!-- Video element -->
+            <iframe 
+                id="popup-video" 
+                src="" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div id="review" class="review"></div>
+    <script defer async src='https://cdn.trustindex.io/loader.js?d2f7c3b39c64147f6d2663d229b'></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Varna-Surf. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
